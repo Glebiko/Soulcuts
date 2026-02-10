@@ -1,0 +1,366 @@
+@use 'vars'as *;
+
+@media (hover: hover) {
+  .header__menu-contact:hover {
+    transform: scale(1.1);
+  }
+
+  .main__list-item:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    transform: scale(1.1);
+  }
+
+  .page-btn:hover {
+    background-color: #828889;
+    border-color: #828889;
+    color: #fff;
+    transform: scale(1.1);
+  }
+
+  .contact-btn:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: #828889;
+    border-color: #828889;
+  }
+}
+
+@media (hover: none) {
+  .header__menu-contact:active {
+    transform: scale(1.1);
+  }
+
+  .main__list-item:active {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    transform: scale(1.1);
+  }
+
+  .page-btn:active {
+    background-color: #828889;
+    border-color: #828889;
+    color: #fff;
+    transform: scale(1.1);
+  }
+
+  .contact-btn:active {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: #828889;
+    border-color: #828889;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .contact-btn,
+  .contact-btn svg {
+    position: static;
+  }
+
+  .contact-btn {
+    gap: 10px;
+    width: 22vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    position: relative;
+
+    &__soulcuts {
+      display: none;
+    }
+
+    &__btn {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+
+    &__btn span::before {
+      position: absolute;
+      content: '';
+      background-color: black;
+      right: 0;
+      top: -7px;
+      width: 20px;
+      height: 2px;
+      transition-duration: 0.25s;
+      transition:
+        transform 0.25s,
+        top 0.25s 0.25s;
+    }
+
+    &__btn span::after {
+      position: absolute;
+      content: '';
+      background-color: black;
+      right: 0;
+      top: 7px;
+      width: 20px;
+      height: 2px;
+      transition-duration: 0.25s;
+      transition:
+        transform 0.25s,
+        top 0.25s 0.25s;
+    }
+
+    &__btn--open span {
+      transition-duration: 0.1s;
+      transition-delay: 0.25s;
+      background: transparent;
+    }
+
+    &__btn--open span::before {
+      transition:
+        top 0.25s,
+        transform 0.25s 0.25s;
+      top: 0px;
+      transform: rotateZ(-45deg);
+    }
+
+    &__btn--open span::after {
+      transition:
+        top 0.4s,
+        transform 0.25s 0.25s;
+      top: 0px;
+      transform: rotateZ(45deg);
+    }
+
+    &__menu {
+      padding: 120px 0;
+      position: absolute;
+      height: 100vh;
+      overflow-x: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      gap: 10vh;
+      inset: 0;
+      z-index: 5;
+      transform: translateY(-100%);
+      background-color: $color-accent;
+      color: #000;
+    }
+
+    &__menu.menu--active {
+      transform: translateY(0);
+    }
+
+    &__menu-shop {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 40px;
+    }
+
+    &__menu-logo {
+      width: 300px;
+      height: 300px;
+      margin: -15px;
+    }
+
+    &__menu-contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 10vh;
+    }
+
+    &__menu-contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 2vh;
+      font-size: 20px;
+    }
+  }
+
+  .main {
+
+    &__inner {
+      flex-direction: column;
+      gap: 9vh;
+      height: 100%;
+    }
+
+    &__shop {
+      font-size: 40px;
+      width: 100%;
+    }
+
+    &__list {
+      width: 220px;
+    }
+
+    .item-link svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .page-btn {
+    width: 30%;
+    padding: 10px 0;
+  }
+
+  .footer {
+    &__inner {
+      position: relative;
+    }
+
+    &__donate {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__contacts {
+      display: none;
+    }
+  }
+
+  .page-btn {
+    width: 300px;
+  }
+
+  .logo-podcast {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .page-btn {
+    width: 200px;
+  }
+
+  .logo-podcast {
+    width: 45px;
+    height: 45px;
+  }
+
+  .header {
+    font-size: 12px;
+
+    &__btn {
+      padding: 15px;
+      width: 15px;
+      border-radius: 10px;
+    }
+
+    &__btn span {
+      width: 15px;
+    }
+
+    &__btn span::before {
+      width: 15px;
+      top: -5px;
+    }
+
+    &__btn span::after {
+      width: 15px;
+      top: 5px;
+    }
+
+    &__btn--open span::before {
+      transition:
+        top 0.25s,
+        transform 0.25s 0.25s;
+      top: 0px;
+      transform: rotateZ(-45deg);
+    }
+
+    &__btn--open span::after {
+      transition:
+        top 0.4s,
+        transform 0.25s 0.25s;
+      top: 0px;
+      transform: rotateZ(45deg);
+    }
+
+
+    &__menu {
+      height: 110vh;
+      padding: 70px 0 70px;
+      overflow: auto;
+      gap: 5vh;
+    }
+
+    &__menu-shop {
+      font-size: 28px;
+      gap: 35px;
+    }
+
+    &__menu-logo {
+      width: 300px;
+      height: 300px;
+      margin: -70px;
+    }
+
+    &__menu-logo svg {
+      width: 100%;
+    }
+
+    &__menu-contact {
+      font-size: 12px;
+    }
+  }
+
+  .main {
+    font-size: 12px;
+    &__inner {
+      padding: 0;
+    }
+
+    &__shop {
+      font-size: 28px;
+      gap: 10px;
+    }
+
+    &__shop-logo {
+      width: 300px;
+      height: 300px;
+    }
+
+    &__shop-logo svg {
+      width: 100%;
+    }
+
+    &__list {
+      width: 200px;
+      gap: 18px;
+    }
+
+    .item-link {
+      padding: 10px;
+    }
+
+    .item-link span {
+      width: 100%;
+      align-self: center;
+    }
+  }
+
+  .footer {
+    font-size: 12px;
+    &__donate {
+      padding-left: 2vw;
+    }
+  }
+}

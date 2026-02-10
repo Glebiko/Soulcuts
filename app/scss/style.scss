@@ -1,0 +1,208 @@
+@use 'reset';
+@use 'vars'as *;
+@use 'fonts';
+@use 'global';
+@use 'media';
+
+.header {
+  padding: 8px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__booking svg {
+    position: absolute;
+    right: 4%;
+    transition: fill 0.3s ease;
+  }
+
+  &__btn {
+    padding: 20px;
+    width: 20px;
+    height: 24px;
+    transition-duration: 1s;
+    display: none;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 12px;
+    background-color: transparent;
+  }
+
+  &__btn span {
+    right: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    transform: translateX(50%);
+    transition-duration: 0.25s;
+    transition-delay: 0.25s;
+  }
+
+  &__menu {
+    display: none;
+  }
+}
+
+
+.main {
+  flex: 1;
+  padding: 50px 0;
+  height: calc(100vh - 152px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 30%;
+
+  &__inner {
+    height: 65vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20vw;
+    align-items: center;
+  }
+
+  &__shop {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+  }
+
+  &__shop span {
+    background-color: rgba($color: #828889, $alpha: 0.1);
+    backdrop-filter: blur(2px);
+    mask-image: 
+    linear-gradient(to bottom, transparent, #828889 20%, #828889 80%, transparent),
+    linear-gradient(to right, transparent, #828889 15%, #828889 95%, transparent);
+    mask-composite: intersect; 
+    -webkit-mask-composite: source-in;
+    padding: 10px 15px;
+    border-radius: 15px;
+  }
+
+  &__shop-logo {
+    width: 500px;
+    height: 500px;
+    margin: -55px;
+  }
+
+  &__list {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__list-item {
+    width: 100%;
+    background-color: $accent-bg;
+    color: #000;
+    border-radius: 15px;
+    transition: transform 0.3s ease, color 0.2s ease, background-color 0.3s ease, border 0.3s ease;
+  }
+
+  .item-link {
+    padding: 10px 10px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .open-modal {
+    cursor: pointer;
+    position: relative;
+  }
+
+  .item-link span {
+    width: 100%;
+  }
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba($color: $accent-bg, $alpha: 0.6);
+    backdrop-filter: blur(5px);
+  }
+
+  &__content {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    height: 80vh;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: translateY(20px) scale(0.95);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+}
+
+.modal.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal.is-open .modal__content {
+  transform: translateY(0) scale(1);
+}
+
+.footer {
+  padding: 8px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__contacts {
+    color: #000;
+    display: flex;
+    gap: 80px;
+  }
+
+  &__contacts-location svg {
+    position: absolute;
+    left: 5%;
+  }
+
+  &__contacts-number svg {
+    position: absolute;
+    left: 7%;
+  }
+
+  &__donate svg {
+    position: absolute;
+    left: 4%;
+  }
+}
+
+.page-btn svg {
+  fill: currentColor;
+  transition: fill 0.3s ease;
+}
