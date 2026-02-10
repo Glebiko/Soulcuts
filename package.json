@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp build"
   },
   "devDependencies": {
     "baseline-browser-mapping": "^2.9.19",
