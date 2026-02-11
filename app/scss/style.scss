@@ -12,15 +12,15 @@
     align-items: center;
   }
 
-  .header__booking svg {
+  &__booking svg {
     position: absolute;
     right: 4%;
     transition: fill 0.3s ease;
   }
 
   &__btn {
-    padding: 20px;
-    width: 20px;
+    padding: 18px;
+    width: 18px;
     height: 24px;
     transition-duration: 1s;
     display: none;
@@ -32,7 +32,7 @@
 
   &__btn span {
     right: 50%;
-    width: 20px;
+    width: 18px;
     height: 2px;
     background-color: #000;
     position: absolute;
@@ -75,18 +75,6 @@
     font-size: 45px;
   }
 
-  &__shop span {
-    background-color: rgba($color: #828889, $alpha: 0.1);
-    backdrop-filter: blur(2px);
-    mask-image: 
-    linear-gradient(to bottom, transparent, #828889 20%, #828889 80%, transparent),
-    linear-gradient(to right, transparent, #828889 15%, #828889 95%, transparent);
-    mask-composite: intersect; 
-    -webkit-mask-composite: source-in;
-    padding: 10px 15px;
-    border-radius: 15px;
-  }
-
   &__shop-logo {
     width: 500px;
     height: 500px;
@@ -97,9 +85,9 @@
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: clamp(200px, 157.14px + 13.39vw, 350px);
     flex-wrap: wrap;
-    gap: 25px;
+    gap: clamp(1.125rem, 1rem + 0.63vw, 1.5625rem);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -114,7 +102,7 @@
   }
 
   .item-link {
-    padding: 10px 10px 10px 20px;
+    padding: clamp(0.625rem, 0.45rem + 0.89vw, 1.25rem);
     display: flex;
     justify-content: space-between;
     align-items: center;

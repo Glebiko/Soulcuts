@@ -92,7 +92,7 @@
       background-color: black;
       right: 0;
       top: -7px;
-      width: 20px;
+      width: 18px;
       height: 2px;
       transition-duration: 0.25s;
       transition:
@@ -106,7 +106,7 @@
       background-color: black;
       right: 0;
       top: 7px;
-      width: 20px;
+      width: 18px;
       height: 2px;
       transition-duration: 0.25s;
       transition:
@@ -192,7 +192,6 @@
   }
 
   .main {
-
     &__inner {
       flex-direction: column;
       gap: 9vh;
@@ -204,8 +203,9 @@
       width: 100%;
     }
 
-    &__list {
-      width: 220px;
+    &__shop-logo {
+      width: 400px;
+      height: 400px;
     }
 
     .item-link svg {
@@ -215,7 +215,6 @@
   }
 
   .page-btn {
-    width: 30%;
     padding: 10px 0;
   }
 
@@ -235,29 +234,29 @@
     }
   }
 
-  .page-btn {
-    width: 300px;
-  }
-
   .logo-podcast {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    font-size: 9px;
+    padding: 8px;
+    border-radius: 13px;
   }
 }
 
 @media (max-width: 500px) {
-  .page-btn {
-    width: 200px;
+  .container {
+    padding: 0 10px;
   }
 
   .logo-podcast {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
+    font-size: 7px;
+    padding: 7px;
+    border-radius: 11px;
   }
 
   .header {
-    font-size: 12px;
-
     &__btn {
       padding: 15px;
       width: 15px;
@@ -294,7 +293,6 @@
       transform: rotateZ(45deg);
     }
 
-
     &__menu {
       height: 110vh;
       padding: 70px 0 70px;
@@ -308,22 +306,13 @@
     }
 
     &__menu-logo {
-      width: 300px;
-      height: 300px;
-      margin: -70px;
-    }
-
-    &__menu-logo svg {
-      width: 100%;
-    }
-
-    &__menu-contact {
-      font-size: 12px;
+      width: 250px;
+      height: 250px;
+      margin: -60px;
     }
   }
 
   .main {
-    font-size: 12px;
     &__inner {
       padding: 0;
     }
@@ -338,19 +327,6 @@
       height: 300px;
     }
 
-    &__shop-logo svg {
-      width: 100%;
-    }
-
-    &__list {
-      width: 200px;
-      gap: 18px;
-    }
-
-    .item-link {
-      padding: 10px;
-    }
-
     .item-link span {
       width: 100%;
       align-self: center;
@@ -358,7 +334,6 @@
   }
 
   .footer {
-    font-size: 12px;
     &__donate {
       padding-left: 2vw;
     }

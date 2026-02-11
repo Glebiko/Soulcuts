@@ -11,7 +11,7 @@ body {
 
 body {
   @extend %effra-100;
-  font-size: 14px;
+  font-size: clamp(0.75rem, 0.68rem + 0.36vw, 1rem);
   line-height: 1.19;
   color: $color-accent;
   background-color: #fff;
@@ -40,7 +40,7 @@ body {
   padding: 12px 0;
   border: 1px solid #000;
   border-radius: 15px;
-  width: 300px;
+  width: clamp(200px, 157.14px + 13.39vw, 350px);
   color: #000;
   text-transform: uppercase;
   position: relative;
@@ -48,7 +48,7 @@ body {
 }
 
 .contact-btn {
-  width: 300px;
+  width: clamp(200px, 157.14px + 13.39vw, 350px);
   padding: 12px 0;
   display: flex;
   justify-content: center;
@@ -59,3 +59,15 @@ body {
   position: relative;
   transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
+
+.logo-podcast {
+    border: 1px solid #000;
+    border-radius: 16px;
+    padding: 10px;
+    color: #000;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
