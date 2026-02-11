@@ -21,8 +21,6 @@ const initLogoAnimation = () => {
       preserveAspectRatio: 'xMidYMid slice',
     },
   });
-
-  animation.setSpeed(1.2);
 };
 
 
