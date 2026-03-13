@@ -1,4 +1,4 @@
-@use 'vars'as *;
+@use 'vars' as *;
 
 @media (hover: hover) {
   .header__menu-contact:hover {
@@ -70,6 +70,13 @@
   }
 }
 
+@media (max-width: 1100px) {
+  .main {
+    background-image: url('../images/main-bg.webp');
+    background-size: 140vw;
+    background-position: 65% 30%;
+  }
+}
 @media (max-width: 900px) {
   .header {
     position: relative;
