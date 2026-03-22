@@ -4,7 +4,6 @@ const headerMenu = document.querySelector('.header__menu');
 const openModalBtn = document.querySelector('.open-modal');
 const modal = document.querySelector('.modal');
 const modalOverlay = document.querySelector('.modal__overlay');
-const toTopBtn = document.querySelector('.footer__logo')
 
 const initLogoAnimation = () => {
   const container = document.querySelector('.main__shop-logo');
@@ -86,11 +85,4 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && modal.classList.remove('is-open')) {
     closeModal();
   }
-});
-
-toTopBtn.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
 });
