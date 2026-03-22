@@ -1,4 +1,4 @@
-@use 'vars'as *;
+@use 'vars' as *;
 
 html {
   scroll-behavior: smooth;
@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  @extend %effra-100;
+  @extend %effra-thin;
   font-size: clamp(0.75rem, 0.68rem + 0.36vw, 1rem);
   line-height: 1.19;
   color: $color-accent;
@@ -44,7 +44,11 @@ body {
   color: #000;
   text-transform: uppercase;
   position: relative;
-  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .contact-btn {
@@ -57,18 +61,21 @@ body {
   border: 1px solid #000;
   border-radius: 15px;
   position: relative;
-  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .logo-podcast {
-    border: 1px solid #000;
-    border-radius: 16px;
-    padding: 10px;
-    color: #000;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 11px;
-    @extend %effra-thin;
-  }
+  border: 1px solid #000;
+  border-radius: 16px;
+  padding: 10px;
+  color: #000;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11px;
+}
