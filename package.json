@@ -27,12 +27,12 @@
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "otf2ttf": "^1.1.2",
-    "sass": "^1.93.3"
+    "sass": "^1.93.3",
+    "sharp": "^0.34.5"
   },
   "dependencies": {
     "gulp-svgstore": "^9.0.0",
     "lottie-web": "^5.13.0",
-    "sharp": "^0.34.5",
     "swiper": "^12.0.3"
   }
 }

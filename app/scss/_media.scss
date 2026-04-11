@@ -19,6 +19,21 @@
     transform: scale(1.1);
   }
 
+  .footer__donate:hover {
+    background-color: #FFBF00;
+    border-color: #FFBF00;
+    color: #000;
+    transform: scale(1.1);
+  }
+
+  .donate-bank:hover {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
   .contact-btn:hover {
     transform: scale(1.1);
     color: #fff;
@@ -42,6 +57,20 @@
   .page-btn:active {
     background-color: #828889;
     border-color: #828889;
+    color: #fff;
+    transform: scale(1.1);
+  }
+
+  .footer__donate:active {
+    background-color: #FFBF00;
+    border-color: #FFBF00;
+    color: #000;
+    transform: scale(1.1);
+  }
+
+  .donate-bank:active {
+    background-color: #000;
+    border-color: #000;
     color: #fff;
     transform: scale(1.1);
   }
@@ -227,17 +256,15 @@
 
   .footer {
     &__inner {
-      position: relative;
-    }
-
-    &__donate {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+      justify-content: center;
     }
 
     &__contacts {
       display: none;
+    }
+
+    &__modal-link {
+      padding: 13px 0;
     }
   }
 

@@ -1,9 +1,6 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__inner">
-      <a class="logo-podcast" href="https://send.monobank.ua/jar/5Vj3iCFRsy" target="_blank" rel="noopener noreferrer" aria-label="монобанка на донат для проекту Ідем на букви">
-        ідем на букви
-      </a>
       <div class="footer__contacts">
         <a class="footer__contacts-location contact-btn" href="https://maps.app.goo.gl/PXVkKVgf18jY8inR8"
           target="_blank" rel="noopener noreferrer">
@@ -24,13 +21,25 @@
           </span>
         </a>
       </div>
-      <a class="footer__donate page-btn" href="https://buymeacoffee.com/idemnabukvy" target="_blank"
-        rel="noopener noreferrer" aria-label="посилання для донату на сервіс buymeacoffee">
-        <svg width="20" height="20">
-          <use xlink:href="images/sprite.svg#footer-donate"></use>
-        </svg>
+      <button class="footer__donate page-btn" type="button" aria-label="кнопка для донату">
         <span>підтримати проект</span>
-      </a>
+      </button>
+    </div>
+    <div class="footer__modal">
+      <div class="footer__modal-overlay"></div>
+      <div class="footer__modal-content" aria-modal="true" role="dialog">
+        <a class="footer__modal-link page-btn" href="https://buymeacoffee.com/idemnabukvy" target="_blank"
+          rel="noopener noreferrer" aria-label="посилання для донату на сервіс buymeacoffee">
+          <svg width="20" height="20">
+            <use xlink:href="images/sprite.svg#footer-donate"></use>
+          </svg>
+          <span>buymeacoffee</span>
+        </a>
+        <a class="donate-bank page-btn" href="https://send.monobank.ua/jar/5Vj3iCFRsy" target="_blank" rel="noopener noreferrer"
+          aria-label="монобанка на донат для проекту Ідем на букви">
+          mono банка
+        </a>
+      </div>
     </div>
   </div>
 </footer>
