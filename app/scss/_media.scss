@@ -21,7 +21,7 @@
 
   .footer__donate:hover {
     background-color: #FFD700;
-    border-color: #FFD700;
+    border-color: #000;
     color: #000;
     transform: scale(1.1);
   }
@@ -63,7 +63,7 @@
 
   .footer__donate:active {
     background-color: #FFD700;
-    border-color: #FFD700;
+    border-color: #000;
     color: #000;
     transform: scale(1.1);
   }
@@ -255,8 +255,17 @@
   }
 
   .footer {
+    padding: 14px 0;
     &__inner {
+      position: relative;
       justify-content: center;
+    }
+
+    &__logo {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     &__contacts {

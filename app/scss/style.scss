@@ -167,7 +167,7 @@
   padding: 8px 0;
   &__inner {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -190,8 +190,13 @@
   &__donate {
     position: relative;
     cursor: pointer;
-    background-color: #FFD700;
-    border-color: #FFD700;
+    background-color: #ffd700;
+    border-color: #000;
+  }
+
+  &__donate svg {
+    position: absolute;
+    left: 4%;
   }
 
   &__modal-link svg {
