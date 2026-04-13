@@ -16,6 +16,8 @@
     background-color: #828889;
     border-color: #828889;
     color: #fff;
+    text-shadow: 0 0 0.2px currentColor, 0.2px 0 currentColor,
+    -0.2px 0 currentColor, 0 0.2px currentColor, 0 -0.2px currentColor;
     transform: scale(1.1);
   }
 
@@ -23,6 +25,8 @@
     background-color: #FCF75E;
     border-color: #000;
     color: #000;
+    text-shadow: 0 0 0.2px currentColor, 0.2px 0 currentColor,
+    -0.2px 0 currentColor, 0 0.2px currentColor, 0 -0.2px currentColor;
     transform: scale(1.1);
   }
 
@@ -37,6 +41,8 @@
   .contact-btn:hover {
     transform: scale(1.1);
     color: #fff;
+    text-shadow: 0 0 0.2px currentColor, 0.2px 0 currentColor,
+    -0.2px 0 currentColor, 0 0.2px currentColor, 0 -0.2px currentColor;
     background-color: #828889;
     border-color: #828889;
   }
