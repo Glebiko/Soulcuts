@@ -6,6 +6,16 @@ $accent-bg: rgba(#d9d9d9, 0.9);
   font-weight: 200;
 }
 
+%raleway-300 {
+  font-family: 'Raleway-Light', sans-serif;
+  font-weight: 300;
+}
+
+%raleway-400 {
+  font-family: 'Raleway-Regular', sans-serif;
+  font-weight: 400;
+}
+
 %effra-400 {
   font-family: 'Effra-Trial-Rg', sans-serif;
   font-weight: 400;
